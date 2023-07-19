@@ -1,0 +1,113 @@
+body {
+    background-color: lightblue;
+    font-family: 'Hylia','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../src/botwpattern.jpeg");
+    background-size: 20%;
+}
+
+
+
+@font-face {
+    font-family: 'Hylia';
+    src: url("../src/HyliaSerifBeta-Regular.otf");
+}
+
+.page {
+    background-color: blanchedalmond;
+    background-image: url("../src/parchmentpattern.jpeg");
+    background-size: 20%;
+    margin: 100px 100px 100px 100px;
+    color: rgb(24, 6, 9));
+    border: 4px solid rgb(46, 26, 6);
+    border-radius: 3rem;
+}
+
+.title {
+text-align: center;
+}
+
+.directions {
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+   
+}
+
+img {
+    background-image: url("../src/sheikah print.png");
+    background-size: 50%;
+    background-color: rgba(51, 40, 38, .8);
+    border-radius: 1rem;
+    border: 3px solid rgb(24, 6, 9);
+    padding: 1rem;
+}
+
+.score {
+    display: flex;
+    align-content: center;
+    border: 3px solid rgb(24, 6, 9);
+    border-radius: 3rem;
+    margin: 0rem 15rem 0rem 15rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+}
+
+.round {
+    padding: 2rem;
+}
+
+.player {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+button {
+    border-color: transparent;
+    background-color: rgb(24, 6, 9);
+    border-radius: 1rem;
+}
+
+button:active {
+    background-color: #473d28;;
+}
+
+.computer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+.results{
+    text-align: center;
+}
+
+.playAgain {
+   text-align: center ;
+}
+
+.playAgainButton {
+    border-radius: 1rem;
+    border: 3px solid #87744a;
+    background-color: #b99f65;
+    color: #473d28;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Hylia';
+}
+
+.license {
+    text-align: center;
+}
