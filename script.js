@@ -26,37 +26,34 @@ function playRound(playerSelection, computerSelection) {
     computerSelection = computerSelection.toLowerCase();
     let messageString = "";
 
-    if(round < 5){
-    if (playerSelection === optionsBeat.get(computerSelection)) {
-        messageString = "You win! " + playerSelection + " beats " + computerSelection + ".";
-        playerScoreNum += 1;
+    if (round < 5) {
+        if (playerSelection === optionsBeat.get(computerSelection)) {
+            messageString = "You win! " + playerSelection + " beats " + computerSelection + ".";
+            playerScoreNum += 1;
 
-    } else if (computerSelection === optionsBeat.get(playerSelection)) {
-        messageString = "You lose! " + computerSelection + " beats " + playerSelection + ".";
-        computerScoreNum += 1;
-    } else if (computerSelection === playerSelection) {
-        messageString = "Tie! No winners."
+        } else if (computerSelection === optionsBeat.get(playerSelection)) {
+            messageString = "You lose! " + computerSelection + " beats " + playerSelection + ".";
+            computerScoreNum += 1;
+        } else if (computerSelection === playerSelection) {
+            messageString = "Tie! No winners."
+        }
+        round += 1;
+
+
+        playerScore.textContent = playerScoreNum;
+        computerScore.textContent = computerScoreNum;
+        rounds.textContent = "Round " + round;
+        results.textContent = messageString;
+    } else {
+        if (computerScoreNum > playerScoreNum) {
+            messageString = "Computer wins! ";
+        } else if (playerScoreNum > computerScoreNum) {
+            messageString = "Player wins! ";
+        } else {
+            messageString = "Tie! ";
+        }
+        results.textContent = messageString + "Reload page to play again.";
     }
-    round += 1;
-
-
-    playerScore.textContent = playerScoreNum;
-    computerScore.textContent = computerScoreNum;
-    rounds.textContent = "Round " + round;
-   results.textContent = messageString;
-} else {
-    if (computerScoreNum>playerScoreNum){
-        messageString = "Computer wins! ";
-     } else if (playerScoreNum>computerScoreNum){
-        messageString = "Player wins! ";
-     } else {
-        messageString = "Tie! ";
-     }
-    results.textContent = messageString + "Reload page to play again.";
-
-}
-
-
 }
 
 
